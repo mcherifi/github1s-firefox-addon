@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Github1s",
+  "version": "1.0",
+  "author": "Mohammed CHERIFI",
+  "description": "Simplest way to browse a github repository source code, adds github1s.com button of in Github repository navigation",
+
+  "icons": {
+    "48": "icons/logo.png"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hello@push.ma"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["init.js"]
+    }
+  ]
+
+}
